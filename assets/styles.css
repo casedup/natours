@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap");
+/*
+! COLORS: 
+
+lightgreen: #7ed56f
+medium green: #55c57a
+Dark Gren: #28b485
+
+*/
 *,
 *::after,
 *::before {
@@ -16,6 +24,27 @@ body {
   color: #777;
   padding: 1rem;
   box-sizing: border-box; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* ! Hack to stop animation from jumping inside */
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: moveInLeft 1s ease-in; }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.8rem;
+  animation: moveInRight 1s ease-in; }
 
 .btn:link,
 .btn:visited {
@@ -41,10 +70,8 @@ body {
   color: #777; }
 
 .btn::after {
-  /* ! must match :active element to work correctly */
   content: "";
   display: inline-block;
-  /* ! treated as a child of :active element */
   height: 100%;
   width: 100%;
   border-radius: 10rem;
@@ -58,41 +85,20 @@ body {
   /* @backwards apply the styles of 0% before animation starts */
   animation: moveInBottom .5s ease-out .75s backwards; }
 
-.btn-white::after {
-  background-color: #fff; }
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
+.btn-white::after {
+  background-color: #fff; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(85, 197, 122, 0.8)), url("../assets/img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../assets/img/hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  /* ! Hack to stop animation from jumping inside */
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 35px;
-  animation: moveInLeft 1s ease-in; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.8rem;
-  animation: moveInRight 1s ease-in; }
 
 .header__logo-box {
   position: absolute;

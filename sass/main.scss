@@ -1,9 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap');
+/*
+! COLORS: 
 
-$color-primary: #7ed56f;
-$color-secondary: #55c57a;
-$color-accent: #28b485;
+lightgreen: #7ed56f
+medium green: #55c57a
+Dark Gren: #28b485
+
+*/
 
 
 *,
@@ -26,73 +30,6 @@ body {
     color: #777;
     padding: 1rem;
     box-sizing: border-box;
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: transform .2s;
-    position: relative;
-    font-size: 1.6rem;
-}
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.btn--white {
-    background-color: #fff;
-    color: #777;
-}
-
-.btn::after {
-    /* ! must match :active element to work correctly */
-    content: "";
-    display: inline-block;
-    /* ! treated as a child of :active element */
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    transition: opacity .3s, transform .4s;
-    
-
-}
-.btn--animated {
-    /* @backwards apply the styles of 0% before animation starts */
-    animation: moveInBottom .5s ease-out .75s backwards;
-}
-
-.btn-white::after {
-    background-color: #fff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom,
-     rgba($color-primary, 0.8),
-     rgba($color-secondary, 0.8)),
-      url("../assets/img/hero.jpg");
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .heading-primary {
@@ -119,6 +56,79 @@ body {
     animation: moveInRight 1s ease-in;
 
 }
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: transform .2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+    background-color: #fff;
+    color: #777;
+} 
+.btn::after {
+    
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transition: opacity .3s, transform .4s;
+    
+
+}
+
+.btn--animated {
+    /* @backwards apply the styles of 0% before animation starts */
+    animation: moveInBottom .5s ease-out .75s backwards;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+.btn-white::after {
+    background-color: #fff;
+}
+ 
+
+
+
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+     rgba(126, 213, 111, 0.8),
+     rgba(40, 180, 133, 0.8)),
+      url("../assets/img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
 
 .header__logo-box {
     

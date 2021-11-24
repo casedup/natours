@@ -4,7 +4,7 @@
   "description": "natours landing page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./assets/styles.css"
+    "compile:sass": "node-sass ./sass/main.scss ./assets/styles.css -w"
   },
   "repository": {
     "type": "git",
