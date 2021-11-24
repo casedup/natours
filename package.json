@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/casedup/natours.git"
   },
-  "author": "witech.co",
+  "author": "witech.vi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/casedup/natours/issues"
   },
-  "homepage": "https://github.com/casedup/natours#readme"
+  "homepage": "https://github.com/casedup/natours#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
