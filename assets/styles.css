@@ -52,7 +52,7 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -73,7 +73,7 @@ body {
     
 
 }
-.btn-animated {
+.btn--animated {
     /* @backwards apply the styles of 0% before animation starts */
     animation: moveInBottom .5s ease-out .75s backwards;
 }
@@ -107,7 +107,7 @@ body {
     margin-bottom: 6rem;
     
 }
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -115,7 +115,7 @@ body {
     animation: moveInLeft 1s ease-in;
 
 }
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -124,18 +124,18 @@ body {
 
 }
 
-.logo-box {
+.header__logo-box {
     
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     /* ! neat trick to center text box in hero section */
     position: absolute;
     top: 40%;
@@ -187,7 +187,7 @@ body {
 @keyframes moveInBottom {
     0%{
         opacity: 0;
-        transform: translateY(3rem;
+        transform: translateY(3rem);
 
     }
 
