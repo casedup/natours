@@ -44,8 +44,7 @@ body {
     letter-spacing: 1.8rem;
     animation: moveInRight 1s ease-in; }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
