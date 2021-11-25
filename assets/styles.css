@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap");
-/*
-! COLORS: 
-
-lightgreen: #7ed56f
-medium green: #55c57a
-Dark Gren: #28b485
-
-*/
 *,
 *::after,
 *::before {
@@ -18,12 +10,44 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 1rem;
-  box-sizing: border-box; }
+  padding: 1rem; }
 
 .heading-primary {
   color: #fff;
@@ -43,6 +67,19 @@ body {
     font-weight: 700;
     letter-spacing: 1.8rem;
     animation: moveInRight 1s ease-in; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -108,33 +145,3 @@ body {
     transform: translate(-50%, -50%);
     /* @useful to get inline-block children to center */
     text-align: center; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    opacity: 0.5;
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100); }
-  80% {
-    opacity: 0.5;
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
