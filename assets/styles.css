@@ -83,6 +83,9 @@ body {
   .heading-secondary:hover {
     transform: skew(2deg, 10deg) scale(1.1); }
 
+.u-center-text {
+  text-align: center; }
+
 *,
 *::after,
 *::before {
