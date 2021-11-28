@@ -81,10 +81,13 @@ body {
   transition: .2s transform;
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .heading-secondary:hover {
-    transform: skew(2deg, 10deg) scale(1.1); }
+    transform: skew(2deg, 5deg) scale(1.1); }
 
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 *,
 *::after,
@@ -175,7 +178,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
