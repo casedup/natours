@@ -66,6 +66,7 @@
         text-decoration: none;
         border-bottom: .1rem solid $dark-green;
         padding: .3rem;
+        backface-visibility: hidden;
 
 
     }
