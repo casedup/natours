@@ -245,15 +245,25 @@ body {
     border-radius: .3rem;
     box-shadow: 0 1.5rem 0.4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
-      background-color: #fff; }
+      background-color: #fff;
+      color: #000; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb990, #ff7730); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem; }
+    .card__picture--1 {
+      background-image: url("./../assets/img/nat-5.jpg"); }
+    .card__picture--2 {
+      background-image: url("./../assets/img/nat-6.jpg"); }
+    .card__picture--3 {
+      background-image: url("./../assets/img/nat-7.jpg"); }
 
 .header {
   height: 95vh;
