@@ -3,12 +3,12 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
 
     &__side {
         
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease;
         font-size: 2rem;
         position: absolute;
@@ -73,10 +73,33 @@
     }
     &__heading-span {
         padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
         &--1 {
             background-image: linear-gradient(to right bottom,
              rgba($color-secondary-light, .85),
              rgba($color-secondary-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            // text-align: center;
+            margin: 0 auto;
+            list-style: none;
+            width: 80%;
+            li {
+                color: $color-black;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+
+            }
         }
     }
 }
