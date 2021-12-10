@@ -5,6 +5,7 @@
     }
     &__input {
         font-size: 1.5rem;
+        color: inherit;
         font-family: inherit;
         padding: 1.5rem 2rem;
         border-radius: .2rem;
@@ -13,11 +14,16 @@
         border-bottom: .3rem solid transparent;
         width: 90%;
         display: block;
+        transition: all .3s;
 
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: .3rem solid $mid-green;
+
+            &:invalid {
+                border-bottom: .3rem solid $color-secondary-dark;
+            }
         }
 
         &::-webkit-input-placeholder {
@@ -28,6 +34,17 @@
 
 
     &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
 
+    }
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
     }
 }
