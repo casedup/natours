@@ -570,7 +570,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 12; }
+  z-index: 12;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
 
 .navigation__background {
   height: 6rem;
@@ -588,7 +589,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 11; }
+  z-index: 11;
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
@@ -621,6 +623,12 @@ body {
   transform: translateX(1rem);
   background-position: 100%;
   color: #55c57a; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  visibility: visible; }
 
 .section-about {
   background-color: #f7f7f7;
