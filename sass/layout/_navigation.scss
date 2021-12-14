@@ -24,6 +24,7 @@
         right: 6.5rem;
         background-image: radial-gradient($light-green, $dark-green);
         z-index: 10;
+        transition: transform .8s;
 
         // transform: scale(50);
 
@@ -37,6 +38,7 @@
         right: 0;
         z-index: 11;
         visibility: hidden;
+        transition: visibility .1s;
 
 
         // opacity: 0;
