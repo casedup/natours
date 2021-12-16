@@ -23,6 +23,10 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .5s .2s;
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 3rem;
+        }
         // position: absolute;
         // top: 50%;
         // left: 50%;
@@ -32,6 +36,11 @@
     &__left {
         width: 33.333333%;
         display: table-cell;
+        @include respond(phone) {
+            width: 50%;
+            height: 100%;
+            vertical-align: middle;
+        }
         
     }
     &__right {
@@ -39,6 +48,15 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        text-align: center;
+        & h2 {
+            width: 100%;
+        }
+        @include respond(phone) {
+            width: 50%;
+            vertical-align: top;
+            padding: 2rem;
+        }
 
     }
     &__img {
@@ -63,6 +81,11 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+            column-gap: 0;
+        }
 
     }
     &:target {
