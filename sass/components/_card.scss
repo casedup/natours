@@ -163,7 +163,7 @@
             font-size: 2rem;
             position: relative;
             box-shadow: none;
-
+            
             &--back {
     
                 transform: rotateY(0);
@@ -173,9 +173,6 @@
         &:hover &__side--front{
             transform: rotateY(0);
         }
-        &__details {
-            padding: 1rem 3rem;
-        }
     
         &__cta {
             position: relative;
@@ -183,7 +180,7 @@
             left: 0;
             transform: translate(0);
             width: 100%;
-            padding: 7rem 4rem 4rem 4rem;
+            padding: 4rem;
             //this text align controls the button
         }
         &__price-box {
@@ -191,7 +188,7 @@
             
         }
         &__price-value {
-            font-size: 4rem;
+            font-size: 6rem;
     
         }
            
